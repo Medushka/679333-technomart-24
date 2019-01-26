@@ -10,7 +10,7 @@
       <a class="main-header-logo" href="index.html">
         <img src="img/logo.svg" width="220" height="50" alt="Логотип ТЕХНОМАРТ">
       </a>
-      <label for="id">
+      <label for="search">
       <b class="header-search">Поиск</b>
       <input type="text" name="search" id="search"></label>
       <a class="main-header-bookmarks" href="bookmarks.html">Закладки: 0</a>
@@ -18,14 +18,17 @@
       <a class="main-header-order" href="order.html">Оформить заказ</a>
 
       <p class="shop-title">
-        <h1 class="shop-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1></p>
+        <h1 class="shop-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+      <p class="header-number">+7 (812) 555-05-55</p>
       <address class="header-address">
-      <p class="header-number">+7 (812) 555-05-55</p><br>
       г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
       </address>
-      <ul>
-        <li><a class="login-button" href="#">Войти</a></li>
-        <li><a class="registration-button" href="#">Регистрация</a></li>
+
+      <p class="logged">Равшан Джамшутович</p>
+      <ul class="personal-navigation">
+        <li><a class="orders" href="#">Мои заказы</a></li>
+        <li><a class="Personal Area" href="#">Личный кабинет</a></li>
+      </ul>
 
       <nav class="main-navigation">
         <ul class="site-navigation">
@@ -45,7 +48,7 @@
 
     <main>
       <ul class="breadcrumbs-catalog">
-        <li><a href="index.html"><img src="home-img.jpg"></a></li>
+        <li><a href="index.html"><img src="home-img.jpg" alt="Главная"></a></li>
         <li><a href="catalog.html">Каталог</a></li>
         <li><a href="tool.html">Инструмент</a></li>
         <li>Перфораторы</li>
@@ -60,7 +63,7 @@
         <label for="check-bosch">BOSCH</label>
 
         <input type="checkbox" name="interskol" id="check-interskol">
-        <label for="check-Interskol">ИНТЕРСКОЛ</label>
+        <label for="check-interskol">ИНТЕРСКОЛ</label>
 
         <input type="checkbox" name="makita" id="check-makita">
         <label for="check-makita">MAKITA</label>
@@ -85,65 +88,66 @@
       <section class="catalog">
         <ul>
           <li class="product-catalog">
-            <img src="BOSCH_BFG_3000.jpg">
-            Перфоратор BOSCH BFG 3000
-            <p><strike>22500 Р.</strike></p>
-            <a class="buy-button" href="#">15500 Р.<img src="buy-button.jpg"></a>
+            <img src="BOSCH_BFG_3000.jpg" alt="Bosch BFG 3000">
+            <h3>Перфоратор BOSCH BFG 3000</h3>
+            <p class="strike">22500 Р.</p>
+            <a class="buy-button" href="#">15500 Р.</a>
           </li>
 
           <li class="product-catalog">
-            <img src="BOSCH_BFG_6000.jpg">
-            Перфоратор BOSCH BFG 6000
-            <p><strike>30500 Р.</strike></p>
-            <a class="buy-button" href="#">25500 Р.<img src="buy-button.jpg"></a>
+            <img src="BOSCH_BFG_6000.jpg" alt="Bosch BFG 6000">
+            <h3>Перфоратор BOSCH BFG 6000</h3>
+            <p class="strike">30500 Р.</p>
+            <a class="buy-button" href="#">25500 Р.</a>
           </li>
 
           <li class="new_product-catalog">
             <input type="button" value="КУПИТЬ" class="buy-button-green">
             <input type="button" value="В ЗАКЛАДКИ" class="item-button-bookmarks">
-            Перфоратор BOSCH BFG 2000
-            <a class="buy-button" href="#">12500 Р.<img src="buy-button.jpg"></a>
+            <h3>Перфоратор BOSCH BFG 2000</h3>
+            <a class="buy-button" href="#">12500 Р.</a>
           </li>
 
           <li class="product-catalog">
-            <img src="BOSCH_BFG_3000.jpg">
-            Перфоратор BOSCH BFG 3000
-            <p><strike>22500 Р.</strike></p>
-            <a class="buy-button" href="#">15500 Р.<img src="buy-button.jpg"></a>
+            <img src="BOSCH_BFG_3000.jpg" alt="Bosch BFG 3000">
+            <h3>Перфоратор BOSCH BFG 3000</h3>
+            <p class="strike">22500 Р.</p>
+            <a class="buy-button" href="#">15500 Р.</a>
           </li>
 
           <li class="new_product-catalog">
-            <img src="BOSCH_BFG_6000.jpg">
-            Перфоратор BOSCH BFG 6000
-            <p><strike>30500 Р.</strike></p>
-            <a class="buy-button" href="#">25500 Р.<img src="buy-button.jpg"></a>
+            <img src="BOSCH_BFG_6000.jpg" alt="Bosch BFG 6000">
+            <h3>Перфоратор BOSCH BFG 6000</h3>
+            <p class="strike">30500 Р.</p>
+            <a class="buy-button" href="#">25500 Р.</a>
           </li>
 
           <li class="product-catalog">
-            <img src="BOSCH_BFG_2000.jpg">
-            Перфоратор BOSCH BFG 2000
-            <a class="buy-button" href="#">12500 Р.<img src="buy-button.jpg"></a>
+            <img src="BOSCH_BFG_2000.jpg" alt="Bosch BFG 2000">
+            <h3>Перфоратор BOSCH BFG 2000</h3>
+            <a class="buy-button" href="#">12500 Р.</a>
           </li>
 
           <li class="new_product-catalog">
-            <img src="BOSCH_BFG_3000.jpg">
-            Перфоратор BOSCH BFG 3000
-            <p><strike>22500 Р.</strike></p>
-            <a class="buy-button" href="#">15500 Р.<img src="buy-button.jpg"></a>
+            <img src="BOSCH_BFG_3000.jpg" alt="Bosch BFG 3000">
+            <h3>Перфоратор BOSCH BFG 3000</h3>
+            <p class="strike">22500 Р.</p>
+            <a class="buy-button" href="#">15500 Р.</a>
           </li>
 
           <li class="product-catalog">
-            <img src="BOSCH_BFG_6000.jpg">
-            Перфоратор BOSCH BFG 6000
-            <p><strike>30500 Р.</strike></p>
-            <a class="buy-button" href="#">25500 Р.<img src="buy-button.jpg"></a>
+            <img src="BOSCH_BFG_6000.jpg" alt="Bosch BFG 6000">
+            <h3>Перфоратор BOSCH BFG 6000</h3>
+            <p class="strike">30500 Р.</p>
+            <a class="buy-button" href="#">25500 Р.</a>
           </li>
 
           <li class="product-catalog">
-            <img src="BOSCH_BFG_2000.jpg">
-            Перфоратор BOSCH BFG 2000
-            <a class="buy-button" href="#">12500 Р.<img src="buy-button.jpg"></a>
+            <img src="BOSCH_BFG_2000.jpg" alt="Bosch BFG 2000">
+            <h3>Перфоратор BOSCH BFG 2000</h3>
+            <a class="buy-button" href="#">12500 Р.</a>
           </li>
+        </ul>
       </section>
     </main>
 
