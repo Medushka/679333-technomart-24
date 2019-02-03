@@ -10,8 +10,11 @@
         <img src="img/technomart_logo.svg" width="220" height="50" alt="Логотип ТЕХНОМАРТ">
       </a>
       <label for="search">
-      <b class="header-search">Поиск</b>
-      <input type="text" name="search" id="search"></label>
+      <form action="index.html" method="get">
+        <b class="header-search">Поиск</b>
+        <input type="text" name="search" id="search">
+      </form>
+      </label>
       <a class="main-header-bookmarks" href="bookmarks.html">Закладки: 0</a>
       <a class="catalog-header-cart" href="cart.html">Корзина: 10</a>
       <a class="main-header-order" href="order.html">Оформить заказ</a>
@@ -23,7 +26,7 @@
       г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
       </address>
 
-      <p class="logged">Равшан Джамшутович</p>
+      <p class="logged"><a href="#">Равшан Джамшутович<a/></p>
       <ul class="personal-navigation">
         <li><a class="orders" href="#">Мои заказы</a></li>
         <li><a class="Personal Area" href="#">Личный кабинет</a></li>
@@ -38,9 +41,6 @@
           <li><a href="special-offers.html">Спецпредложения</a></li>
           <li><a href="delivery.html">Доставка</a></li>
           <li><a href="contacts.html">Контакты</a></li>
-        </ul>
-        <ul class="user-navigation">
-          <li class="login-link">Вход</li>
         </ul>
       </nav>
     </header>
@@ -76,9 +76,9 @@
 
       <section class="supply-catalog-choice">
         <label>
-        <input type="radio" name="acc" value="acc">Аккумуляторные</label>
+        <input type="radio" name="supply" value="acc">Аккумуляторные</label>
         <label>
-        <input type="radio" name="electric" value="electric">Сетевые</label>
+        <input type="radio" name="supply" value="electric">Сетевые</label>
       </section>
 
       <p class="filter-show">
@@ -142,7 +142,7 @@
           </li>
 
           <li class="product-catalog">
-            <img src="BOSCH_BFG_2000.jpg" width="218" height="170" alt="Bosch BFG 2000">
+            <img src="img/bosch_bfg_2000.jpg" width="218" height="170" alt="Bosch BFG 2000">
             <h3>Перфоратор BOSCH BFG 2000</h3>
             <a class="buy-button" href="#">12500 Р.</a>
           </li>
