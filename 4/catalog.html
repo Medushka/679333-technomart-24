@@ -10,11 +10,9 @@
       <a class="main-header-logo" href="index.html">
         <img src="img/technomart_logo.svg" width="220" height="50" alt="Логотип ТЕХНОМАРТ">
       </a>
-      <label for="search">
       <form action="https://echo.htmlacademy.ru/" method="get">
         <input type="text" name="search" id="search" placeholder="Поиск" aria-label="Поиск">
       </form>
-      </label>
       <a class="main-header-bookmarks" href="bookmarks.html">Закладки: 0</a>
       <a class="catalog-header-cart" href="cart.html">Корзина: 10</a>
       <a class="main-header-order" href="order.html">Оформить заказ</a>
@@ -26,7 +24,7 @@
       г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
       </address>
 
-      <p class="logged"><a href="#">Равшан Джамшутович<a/></p>
+      <p class="logged"><a href="#">Равшан Джамшутович</a></p>
       <ul class="personal-navigation">
         <li><a class="orders" href="#">Мои заказы</a></li>
         <li><a class="Personal Area" href="#">Личный кабинет</a></li>
@@ -57,6 +55,7 @@
         <h2>ПЕРФОРАТОРЫ</h2>
       </section>
 
+    <form action="https://echo.htmlacademy.ru" method="post">
       <section class="manufacturer-catalog-choice">
         <h3>Производители:</h3>
         <input type="checkbox" name="bosch" id="check-bosch">
@@ -85,6 +84,7 @@
 
       <p class="filter-show">
         <button type="submit">Показать</button>
+    </form>
 
       <section class="catalog">
         <ul>
@@ -192,11 +192,11 @@
       <a href="https://htmlacademy.ru/">htmlacademy.ru</a></p>
     </footer>
 
-    <div class="modalWindow-catalog">
-      <a href="#close" title="Закрыть" class="close"><img src="img/icon-close.svg" alt="Закрыть"></a>
+    <div class="modalwindow-catalog">
+      <button type="button">X</button>
       <p>Товар добавлен в корзину!</p>
-      <a href="#" class="modalOrder">Оформить заказ</a>
-      <a href="#close" class="closeOrder">Продолжить покупки</a>
+      <a href="#" class="modalorder">Оформить заказ</a>
+      <button type="button">Продолжить покупки</button>
     </div>
 
   </body>
