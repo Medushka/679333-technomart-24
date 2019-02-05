@@ -9,9 +9,9 @@
       <a class="main-header-logo">
         <img src="img/technomart_logo.svg" width="220" height="50" alt="Логотип ТЕХНОМАРТ">
       </a>
-      <label for="search">
-      <b class="header-search">Поиск</b>
-      <input type="text" name="search" id="search"></label>
+      <form action="https://echo.htmlacademy.ru/" method="get">
+        <input type="text" name="search" id="search" placeholder="Поиск" aria-label="Поиск">
+      </form>
       <a class="main-header-bookmarks" href="bookmarks.html">Закладки: 0</a>
       <a class="main-header-cart" href="cart.html">Корзина: 0</a>
       <a class="main-header-order" href="order.html">Оформить заказ</a>
@@ -68,9 +68,9 @@
       <a class="main-footer-logo"><img src="img/technomart_logo.svg" width="220" height="50" alt="Логотип ТЕХНОМАРТ"></a>
 
       <address class="footer-address">
-        г. Санкт-Петербург, ул. Б. Конюшенная, д 19/8</address>
+        г. Санкт-Петербург, ул. Б. Конюшенная, д 19/8
         +7 (812) 555-05-55
-
+      </address>
 
       <ul class="footer-navigation">
         <li class="footer-line-1"><a href="company.html">Компания</a></li>
@@ -105,5 +105,26 @@
       <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
 
     </footer>
+    <div class="modal-map">
+      <img src="img/map-popup.jpg" alt="Развернутая карта">
+      <button type="button">X</button>
+    </div>
+
+    <div class="modal-window">
+      <button type="button">X</button>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <label for="name-field">Ваше имя:</label>
+        <input type="text" name="name" id="name-field" placeholder="Имя Фамилия" aria-label="Имя Фамилия">
+
+        <label for="email-field">Ваш e-mail:</label>
+        <input type="text" name="e-mail" id="email-field" placeholder="email@example.com" aria-label="email@example.com">
+
+        <label for="text-field">Текст письма:</label>
+        <input type="text" name="text" id="text-field" placeholder="В свободной форме" aria-label="Текст пиьсма в свободной форме">
+
+        <button type="submit">Отправить</button>
+      </form>
+    </div>
+
   </body>
 </html>
