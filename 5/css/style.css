@@ -14,20 +14,24 @@ body {
 
 a {
   text-decoration: none;
+  text-transform: none;
+  color: #ffffff;
 }
 
-ul {
+.main-header li{
   list-style: none;
 }
 
-header {
-  background-color: rgba(243, 247, 248, 0.5);
+.main-header {
+  background-color: #f3f7f8;
 }
 
-main,
-.breadcrumbs-catalog a {
-  color: #000000;
+.header-top-panel {
+  background-color: #32425c;
+  font-size: 17px;
+  line-height: 18px;
 }
+
 
 .site-title {
   font-style: italic;
@@ -40,62 +44,39 @@ main,
   color: #ee3643;
 }
 
-article,
-.contacts,
-.login-button,
-.registration-button {
-  color: #000000;
-}
-
-.main-navigation,
-.header-top-panel {
-  background-color: #32425c;
-}
-
-.header-top-panel {
-  line-height: 18px;
-}
-
-/* .site-navigation {
-  list-style: none;
-
-}
-*/
-
-.main-navigation a,
-.header-top-panel a,
-ul a,
-article a,
-section a,
-p a {
-  color: #ffffff;
-}
-
 .header-address {
   font-size: 14px;
   color: #32425c;
-  font-style: normal !important;
   line-height: 24px;
+  font-style: normal;
 }
 
-address + ul  {
-  color: #eaa133;
+
+.login-button,
+.registration-button {
   font-size: 21px;
   line-height: 21px;
+  color: #000000;
 }
 
+.site-navigation {
+  background-color: #32425c;
+}
 
-
-h2 {
+.headline {
   font-size: 30px;
-  text-transform: uppercase;
   line-height: 30px;
+  text-transform: uppercase;
 }
 
-h2 ~ p {
+.pre-footer p {
   font-family: "PT Sans", sans-serif;
   font-size: 13px;
   line-height: 24px;
+}
+
+.pre-footer ul{
+  list-style: none;
 }
 
 .partner {
@@ -107,12 +88,11 @@ h2 ~ p {
 .main-button-email {
   font-size: 14px;
   line-height: 18px;
+  text-transform: uppercase;
 }
 
 .footer-top {
   background-color: #32425c;
-  font-size: 18px !important;
-  line-height: 24px;
 }
 
 .footer-bottom {
@@ -121,17 +101,34 @@ h2 ~ p {
   line-height: 18px;
 }
 
-.footer-navigation {
+.footer-address {
   font-size: 18px;
+  line-height: 24px;
+  font-style: normal;
 }
 
-.footer-line-2 a,
-p a {
+.footer-navigation {
+  list-style: none;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.footer-line-2 a {
   color: #ffd180;
 }
 
-.footer-address {
-  font-style: normal !important;
+.footer-copyright {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.list-social {
+  list-style: none;
+}
+
+.footer-email a,
+.footer-developer a {
+  color: #ffd180;
 }
 
 .modal-map,
@@ -139,61 +136,106 @@ p a {
   display: none;
 }
 
-.logged a{
+.logged a {
+  color: #000000;
   font-size: 21px;
   line-height: 21px;
-  color: #000000;
 }
 
-.personal-navigation a{
+.personal-navigation {
+  list-style: none;
+}
+
+.personal-navigation a {
   color: #32425c;
   text-decoration: underline;
+  font-size: 16px;
+  line-height: 18px;
 }
 
 .breadcrumbs-catalog {
+  list-style: none;
+}
+
+.breadcrumbs-catalog li {
   font-family: "PT Sans", sans-serif;
   font-size: 13px;
   line-height: 18px;
+  color: #000000;
+}
+
+.breadcrumbs-catalog a {
+  color: #000000;
+}
+
+.catalog-title {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.filter-headline {
+  font-family: "PT Sans",sans-serif;
+  font-size: 17px;
+  line-height: 30px;
+  color: #000000;
   text-transform: uppercase;
 }
 
 .manufacturer-catalog-choice,
 .supply-catalog-choice {
-font-family: "PT Sans", sans-serif;
-font-size: 15px;
-text-transform: uppercase;
-line-height: 20px !important;
+  font-family: "PT Sans",sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  color: #000000;
+  text-transform: uppercase;
 }
 
-h3:first-child {
-  font-size: 17px;
-  font-weight: bold;
-  line-height: 30px;
-}
-
-.filter-show {
-  font-family: "PT Sans", sans-serif;
+.submit-btn {
+  font-family: "PT Sans",sans-serif;
   font-size: 13px;
   line-height: 18px;
+  text-transform: uppercase;
 }
 
-h4 {
-  font-family: "PT Sans", sans-serif;
+.catalog li {
+  list-style: none;
+}
+
+.product-catalog h4,
+.new-product-catalog h4 {
+  font-family: "PT Sans",sans-serif;
   font-size: 18px;
-  font-weight: bold;
   line-height: 20px;
+  color: #000000;
 }
 
 .strike {
-  text-decoration: line-through;
+  font-family: "PT Sans",sans-serif;
+  font-size: 17px;
+  line-height: 18px;
   color: #999999;
+  text-decoration: line-through;
 }
 
 .buy-button {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans",sans-serif;
   font-size: 17px;
   line-height: 18px;
   font-weight: bold;
+}
+
+.buy-button-green {
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff
+}
+
+.item-button-bookmarks {
+  font-size: 14px;
+  line-height: 18px;
+  color: #32425c;
 }
 
 .modalwindow-catalog {
