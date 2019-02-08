@@ -238,6 +238,10 @@ a {
   color: #32425c;
 }
 
+.footer-social ul {
+  list-style: none;
+}
+
 .modalwindow-catalog {
   display: none;
 }
